@@ -1,5 +1,5 @@
 #Container for Kafka - Spark streaming
-#Check https://github.com/Yannael/brufence/blob/master/docker/streaming/README.md for details
+#Check https://github.com/Namrata1704/Kafka-Spark-WordCount-/blob/master/README.md for details
 
 # Version & flavour of OS
 FROM centos:centos6
