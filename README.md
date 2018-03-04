@@ -20,23 +20,23 @@ You can find the latest Docker documentation at https://docs.docker.com/. This R
 3. Create Docker Image:
    - A Docker Image is the template (application plus required binaries and libraries) needed to build a running Docker Container (the        running instance of that image).
    - Command to build image (Go the path where Dockerfile is saved)
-     docker build -t <imageName>:<tag> .
-     Eg: docker build bigdata:1 .
+   - docker build -t <imageName>:<tag> .
+   - Eg: docker build bigdata:1 .
 
 4. List docker images:
    - Command to list all build docker images in the cache
-     docker images
+   - docker images
      
 5. Run Docker container
    - docker run -it <imagename>:<tag>
-     Eg: docker run -it bigdata:1
+   - Eg: docker run -it bigdata:1
 
 6. List running container:
    - docker ps -a
-Now the docker is all setup and running.
+   - Now the docker is all setup and running.
 
 7. Create Twitter API account and get keys for twitter_config.py
-   Update Tweet_to_kafka_topic.py and add in the needed credentials for your twitter account.
+   - Update Tweet_to_kafka_topic.py and add in the needed credentials for your twitter account.
 
 8. Start Zookeeper:
    - bin/zookeeper-server-start.sh ../../config/zookeeper.properties  > zookeeper.log 2>&1 &
@@ -48,8 +48,8 @@ Now the docker is all setup and running.
     - kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic BigData
    
 10. Write tweets to kafka Topic:
-	- Use Tweet_to_kafka_topic.py
-  - python Tweet_to_kafka_topic.py (that will begin to stream data events into a kafka producer)
+    - Use Tweet_to_kafka_topic.py
+    - python Tweet_to_kafka_topic.py (that will begin to stream data events into a kafka producer)
 
 11. Spark-streaming
     - Use spark_streaming_wordcount.py
