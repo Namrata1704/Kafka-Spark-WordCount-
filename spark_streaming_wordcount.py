@@ -8,7 +8,7 @@
 
  and then run the example
     `$ bin/spark-submit --jars \
-      spark-streaming-kafka-assembly-*.jar \
+      jars/spark-streaming-kafka-assembly-*.jar \
       spark_streaming_wordcount.py \
       localhost:2181 Bigdata`
 """
