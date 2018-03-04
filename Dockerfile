@@ -13,7 +13,7 @@ RUN yum install -y  wget dialog curl sudo lsof vim axel telnet nano openssh-serv
 #Install Java
 RUN yum install -y java-1.8.0-openjdk java-1.8.0-openjdk-devel 
 
-ENV HOME /home/kpmg
+ENV HOME /home/bigdata
 WORKDIR $HOME
 
 #Install Spark (Spark 2.1.1 - 02/05/2017, prebuilt for Hadoop 2.7 or higher)
