@@ -20,7 +20,7 @@ You can find the latest Docker documentation at https://docs.docker.com/. This R
 3. Create Docker Image:
    - A Docker Image is the template (application plus required binaries and libraries) needed to build a running Docker Container (the        running instance of that image).
    - Command to build image (Go the path where Dockerfile is saved)
-   - docker build -t <imageName>:<tag> .
+   - docker build -t imageName:tag .
    - Eg: docker build bigdata:1 .
 
 4. List docker images:
@@ -28,7 +28,7 @@ You can find the latest Docker documentation at https://docs.docker.com/. This R
    - docker images
      
 5. Run Docker container
-   - docker run -it <imagename>:<tag>
+   - docker run -it imagename:tag
    - Eg: docker run -it bigdata:1
 
 6. List running container:
@@ -53,4 +53,4 @@ You can find the latest Docker documentation at https://docs.docker.com/. This R
 
 11. Spark-streaming
     - Use spark_streaming_wordcount.py
-    - bin/spark-submit --jars jars/spark-streaming-kafka-assembly-*.jars spark_streaming_wordcount.py localhost:9092 BigData
+    - bin/spark-submit --jars jars/spark-streaming-kafka-assembly-*.jars spark_streaming_wordcount.py localhost:9092 BigData
