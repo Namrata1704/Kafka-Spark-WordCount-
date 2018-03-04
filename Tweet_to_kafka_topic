@@ -11,7 +11,7 @@ consumer_secret =  "TWITTER_APP_CONSUMER_SECRET"
 
 class StdOutListener(StreamListener):
     def on_data(self, data):
-        producer.send_messages("KpmgTweet", data.encode('utf-8'))
+        producer.send_messages("BigData", data.encode('utf-8'))
         print (data)
         return True
     def on_error(self, status):
